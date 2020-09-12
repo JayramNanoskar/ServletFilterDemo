@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns="/doLogin")
 public class MyServlet extends HttpServlet{
 protected void doGet(HttpServletRequest req , HttpServletResponse res) throws ServletException, IOException {
-		
+	System.out.println("Inside servlet");
 	PrintWriter out = res.getWriter();
 	String username = req.getParameter("uname");
 	String password  = req.getParameter("pwd");
